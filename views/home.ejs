@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>Welcome to LS-X !</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+     <link rel="stylesheet" href="/styles/loader-6.css">
+     
+</head>
+  <body style="font-family:Quicksand;color: #333;">
+    
+     <!-- <script>
+    loaders = document.getElementsByClassName('loader-wrapper');
+    loaders[0].style.display = "inherit";
+    </script> -->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark align-items-right">
+  <div class="glitchy-txt">
+  <a hidden class="navbar-brand glitch-link" href="#" style="font-weight:bold;">LS-X | Beta</a>
+  <a  class="navbar-brand glitch-link" href="/  " style="font-weight:bold;">LS-X | Beta</a>
+  <a hidden class="navbar-brand glitch-link" href="#" style="font-weight:bold;">LS-X | Beta</a>
+  
+  </div>
+<form methode="GET" style="display:flex;flex-direction:row;align-items:flex-start;justify-content: space-around;"  action="/shuffle" target="_blank">
+
+<select name="interval" class="custom-select custom-select-sm">
+  <option selected value="1">30s</option>
+  <option value="2">60s</option>
+  <option value="3">120s</option>
+  <option value="3">180s</option>
+</select>
+ 
+  <button  style="border-width:0px;background-color:#8F00FF;" type="submit"  class="button shuffle  ">  Shuffle !</a>
+  
+</form>  
+  <button  class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+
+
+
+<script>
+document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+
+</script>
+ 
+    
+
+
+  <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+
+  
+    <ul  class="navbar-nav ml-auto">
+      <li class="nav-item active ml-auto">
+        <a class="nav-link button" style="border-width:0px;background-color:#8F00FF;font-size:1rem;" href="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ml-auto">
+        <a class="nav-link button" style="border-width:0px;background-color:#8F00FF;font-size:1rem;" href="/about">About</a>
+      </li>
+     
+    </ul>
+    
+  </div>
+
+  
+   
+
+
+  
+ 
+  
+</nav>
+<br>
+
+
+<script>
+  
+  function searchme () { 
+  
+  var input, filter, cards, cardContainer, title, i;
+  input = document.getElementById("search");
+  filter = input.value.toUpperCase();
+  cardContainer = document.getElementById("Visuals");
+  cards = cardContainer.getElementsByClassName("col");
+  
+  for (i = 0; i < cards.length; i++) {
+    title = cards[i].querySelector(".card-title");
+    if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = "block";
+    } else {
+      cards[i].style.display = "none";
+    }
+ }
+
+  }
+ 
+
+
+
+
+</script>
+<div class="loader-wrapper" id="loader-6">
+        <div id="loader"></div>
+    </div>
+<script>
+  $( document ).ready(function() {
+  // Handler for .ready() called.
+ 
+     $('#loader').fadeOut('slow');
+     $('  body').hide().fadeIn('slow');
+     
+
+     
+
+});
+</script>    
+
+<div class="container-fluid">
+  <div  class="row"  style="justify-content:center" >
+
+    <form class="form-inline " >
+        <input id="search" onkeyup="searchme()" class="form-control mr-sm-2" type="search" placeholder="wanna see something ?" aria-label="Search">
+    </form>
+  
+  
+  </div>
+
+  <div id="Visuals" class="row" style="margin-top:30px;" >
+    <% arrayOfObjects.forEach( (element,index) => { %>
+  
+
+      <div class="col" style="margin-top:30px">
+        <div class="card card text-white bg-dark mb-3" style="width: 18rem;">
+      <img class="card-img-top" src=<%= element.image %>  alt="Simu image..">
+      <div class="card-body">
+        <h5 class="card-title"><%= element.name %> </h5>
+        <p class="card-text"><%= element.description %> </p>
+        <a href=<%= element.link %>  target="_blank" ><i class="fa fa-play-circle fa-3x"></i> </a>
+        
+      </div>
+     
+    </div>
+        </div>
+
+
+
+      <% }) %>
+
+  </div>
+
+
+  
+</div>
+</div>
+
+
+
+
+</div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

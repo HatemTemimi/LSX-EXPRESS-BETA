@@ -1,0 +1,158 @@
+<style type="text/css">
+			body {
+				background-color: #000000;
+				/*background-color: #ab20fd;*/
+				color: #FFFFFF;
+				overflow: hidden;
+			 	
+			}
+	
+			#c {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				height:100%;
+				 width:auto;
+			}
+	
+			a {
+				color: #FFFFFF;
+				font-weight: bold;
+			}
+	
+			#desc {
+				background-color: rgba(0, 0, 0, 0.2);
+				width: 1024px;
+			}
+			.interaction{
+				position: fixed;
+ 				 left: 50%;
+  				bottom: 0px;
+  				transform: translate(-50%, -50%);
+  margin: 0 auto;
+
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	/*letter-spacing: 2px;*/
+	text-indent: 2px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.75em;
+	color:grey;
+  
+			}
+
+</style>
+</head>
+<body class="loading"  ondblclick="hide()">
+	<div hidden id="desc">
+	fps: <span id="fps"></span><br>
+			<form>
+				<p hidden id="interval"><%= interval %></p>
+				<input type="radio" name="render" onclick="switchRenderer('composite')" checked="checked">composite</input><br>
+				<input type="radio" name="render" onclick="switchRenderer('bypass')">bypass</input><br>
+				<input type="checkbox" onclick="goFull(this)" checked="checked">doubleclick anywhere to hide this box. Press F11 for fullscreen.
+			</form>
+	</div>
+	<div class="loader-wrapper" id="loader-6">
+        	<div id="loader"></div>
+    </div>
+   <div  id="alias" class="content__title-wrap">
+					<span class="content__pretitle fade-in">LS-X Road Systems</span>
+					<h2 class="content__title fade-in glitch"> <%= alias %>   </h2>
+					
+	</div>
+    
+<script>
+window.addEventListener('mousemove', (event) => {
+
+	setTimeout(() => {
+		$('#interaction').fadeOut('slow');	
+	}, 3000);
+	
+	
+});
+window.addEventListener('load', (event) => {
+	//$('#alias').fadeIn('slow');
+	
+	setTimeout(() => {	
+		$('#alias').fadeOut('slow');
+		//$('#alias').fadeIn('slow');	
+	}, 6000);
+	
+	
+});
+</script>  
+
+		<canvas id="c"></canvas>	
+		<!-- <div style=" position:absolute;
+		bottom:0px;
+		right:25%;
+		left:50%;
+		margin-left:2%;">
+		<span style="font-family: 'Roboto Mono', monospace;content: '';
+		bottom: 3em;
+		height: 1.5em;
+		width: 1px;;">&nbsp;&nbsp;| </span><br>
+			<span style="width: 6em;;font-family: 'Roboto Mono', monospace;
+			font-size: 0.75em;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			text-indent: 2px;">Click</span>
+		</div> -->
+
+
+		<!-- <div style="">
+			<div style="display:flex;align-items: center;flex-direction: column;">
+				<span>|</span>
+				<span>EXIT</span>
+			</div>
+		</div> -->
+		
+			<div id="interaction" class="interaction">
+				<span>|</span><br>
+					<span>Move Cursor</span>	
+			</div>
+</body>
+	<% if (loop == true) { %>
+<script>
+	let tmp = document.getElementById('interval').innerHTML;
+	let converted = 1; 
+	if (Number(tmp) === 60000) converted  = 2;
+	if (Number(tmp) === 120000) converted = 3;
+	if (Number(tmp) === 180000) converted = 4;
+	
+	window.addEventListener('load', (event) => {
+	document.body.style.cursor = "move";
+	load();
+	setTimeout(() => {
+		location.href=`/shuffle?interval=${converted}`;
+	}, Number(tmp));
+});
+</script>
+
+	<% } else { %>
+
+<script>
+	window.addEventListener('load', (event) => {
+	load();
+});
+</script>
+	<% } %>
+	<script>
+				var isFullScreen = false;
+			document.addEventListener('touchmove', onmousedown = function (p) {
+				if (!isFullScreen) {
+					var requestFullScreen = document.body.requestFullScreen || document.body.webkitRequestFullScreen || document.body.mozRequestFullScreen || document.body.msRequestFullscreen;
+					if (requestFullScreen) {
+						requestFullScreen.call(document.body);
+						window.onresize();
+					}
+				}
+				p.preventDefault();
+				document.onmousemove(p.touches[0]);
+			})
+		</script>
+
+</html>

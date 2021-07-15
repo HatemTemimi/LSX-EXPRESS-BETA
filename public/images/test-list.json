@@ -1,0 +1,17 @@
+[
+    {
+      "name": "turing-fluid",
+      "category": "turing",
+      "link": "/turing_fluid"
+    }, 
+    {
+      "name": "inksplash",
+      "category": "ink",
+      "link": "/inksplash"
+    }, 
+    {
+      "name": "inksplash2",
+      "category": "ink",
+      "link": "/inksplash"
+    }
+]

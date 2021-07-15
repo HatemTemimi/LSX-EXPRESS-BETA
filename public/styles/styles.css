@@ -1,0 +1,96 @@
+
+/* text on launch*/
+
+.content-fade {
+  
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 13rem);
+	position: absolute;
+	justify-content: flex-start;
+	align-items: center;
+ 
+  
+} 
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+ }
+
+
+.content__title-wrap {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 13rem);
+	position: absolute;
+	justify-content: flex-start;
+	align-items: center;
+
+	animation: fadeIn linear 1s;
+	-webkit-animation: fadeIn linear 1s;
+	-moz-animation: fadeIn linear 1s;
+	-o-animation: fadeIn linear 1s;
+	-ms-animation: fadeIn linear 1s;
+	font-size: 4em;
+	letter-spacing: .4em;
+	color: lightgrey;
+   	font-family: ltc-bodoni-175, serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-top:40vh;
+	position: absolute;
+	text-align: center; 
+	pointer-events: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.content__title-wrap a {
+	pointer-events: auto;
+}
+
+.content__pretitle {
+	color: var(--color-alt);
+	font-size: 1rem;
+	letter-spacing: .1;
+	text-align: center;
+font-family: 'Roboto Mono', monospace;
+}
+
+.content__title {
+	font-size: 6vw;
+	font-weight: normal;
+	margin: 0.5rem 0 1.5rem;
+	font-family: azo-sans-uber, sans-serif;
+}
+
+.content__link {
+	text-decoration: underline;
+	font-family: azo-sans-uber, sans-serif;
+	font-size: 1.1rem;
+	color: inherit;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.content__pretitle{
+		display:none;
+	}
+	
+  }
