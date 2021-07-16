@@ -397,8 +397,8 @@ const arrayOfObjects = [
     category: "Tunnels",
     link: "/traffic-ohio",
     description: "Ready the wheels !",
-    // image: "/images/traffic-ohio.png",
-    image: "/images/highway.gif",
+    image: "/images/traffic-ohio.png",
+    // image: "/images/highway.gif",
   },
   {
     name: "Slices",
