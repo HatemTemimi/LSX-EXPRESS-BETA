@@ -6,11 +6,11 @@ const mongoose = require("mongoose");
 
 
 const app = express();
-
+app.use(compression()); //Compress all routes
 app.use(express.static(__dirname + '/public'));
 app.set("view engine", "ejs");
 
-app.use(compression())
+
 
 app.use(express.urlencoded({ extended: true })); //middleware packed up with EXPRESS framework to handle URL data
 //app.use(bodyParser.urlencoded({ extended: false }));
