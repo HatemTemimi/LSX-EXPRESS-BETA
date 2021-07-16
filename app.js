@@ -2,7 +2,6 @@ const express = require("express");
 var bodyParser = require("body-parser");
 var compression = require('compression')
 const visualRoutes = require("./routes/visuals");
-const mongoose = require("mongoose");
 
 
 const app = express();
