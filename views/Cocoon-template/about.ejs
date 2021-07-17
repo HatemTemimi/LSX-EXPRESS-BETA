@@ -45,11 +45,11 @@
     </a>
     <div class="row justify-content-right">
         <!--=================== side menu ====================-->
-        <div style="max-width: 14rem;" class="col-lg-2 col-md-3 col-12 menu_block">
+        <div style="max-width:12vw;min-width: 170px;" class="col-lg-2 col-md-3 col-12 menu_block">
 
             <!--logo -->
             <div style="max-width:3vw;min-width: 90px;height:auto;" class="logo_box">
-                <a style="margin-left:1rem;" href="/home">
+                <a style="margin-left:2.5rem;" href="/home">
                     <img src="assets/img/pngwing.svg" alt="LS-X">
                 </a>
             </div>
@@ -70,8 +70,8 @@
                     </li>   
                     <li>
                      
-                        <select style="border-radius: 0 10px 10px 0;"  class="btn btn-secondary-outline" onChange="window.open(this.value,'_blank');">
-                            <option value="#" disabled> Shuffle</option>
+                        <select id="shuffle-component" style=""  class="btn btn-dark" onChange="window.open(this.value,'_blank');">
+                            <option value="#" >Shuffle </option>
                             <option value="/shuffle?interval=1">Shuffle 30s</option>
                             <option value="/shuffle?interval=2">Shuffle 60s</option>
                             <option value="/shuffle?interval=3">Shuffle 90s</option>
