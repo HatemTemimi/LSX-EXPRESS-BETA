@@ -17,6 +17,9 @@
 		<script>document.documentElement.className = 'js';</script>
 	</head>
 	<body class="demo-4">
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0&appId=244909223739249&autoLogAppEvents=1" nonce="hap7zVYU"></script>
+	
 		<svg class="hidden">
 			<symbol id="icon-arrow" viewBox="0 0 24 24">
 				<title>arrow</title>
@@ -35,6 +38,7 @@
 			
 			</div>
 			
+			<div class="fb-share-button" data-href="http://lsxs.me/home" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flsxs.me%2Fhome&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 			<div class="content">
 				<!-- The canvas where ThreeJs renders the WebGL -->
 				<canvas id="scene" class="clickable"></canvas>
@@ -44,5 +48,6 @@
 		<script src="InfiniteTubes/js/vendors/OBJLoader.js"></script>
 		<script src="InfiniteTubes/js/vendors/TweenMax.min.js"></script>
 		<script src="InfiniteTubes/js/demo4.js"></script>
+	
 	</body>
 	<%- include('../partials/custom-loop-script.ejs') %>
