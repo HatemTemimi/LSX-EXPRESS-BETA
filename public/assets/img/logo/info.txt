@@ -1,0 +1,15 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Colus-Regular
+font link: https://www.fontfabric.com/colus/
+font author: Stan Partalev
+font author site: http://www.fontfabric.com/
+
+
+
+fontColor: {"hex":"#FFFFFF"}
+bgColor: {"hex":"#212529"}
+
+
+      
