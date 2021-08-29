@@ -46,8 +46,6 @@
 </style>
 </head>
 <body class="loading"  ondblclick="hide()">
-	<div id="fb-root"></div>
-		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0&appId=244909223739249&autoLogAppEvents=1" nonce="hap7zVYU"></script>
 	<div hidden id="desc">
 	fps: <span id="fps"></span><br>
 			<form>
@@ -116,7 +114,6 @@ window.addEventListener('load', (event) => {
 				<span>|</span><br>
 					<span>Move Cursor</span>	
 			</div>
-			<div class="fb-share-button" data-href="http://lsxs.me/home" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flsxs.me%2Fhome&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 </body>
 	<% if (loop == true) { %>
 <script>
@@ -156,6 +153,29 @@ window.addEventListener('load', (event) => {
 				p.preventDefault();
 				document.onmousemove(p.touches[0]);
 			})
+		</script>
+		<script>
+(function() {
+    var mouseTimer = null, cursorVisible = true;
+
+    function disappearCursor() {
+        mouseTimer = null;
+        document.body.style.cursor = "none";
+        cursorVisible = false;
+    }
+
+    document.addEventListener('mousemove',( ) =>  {
+		console.log('ticking');
+        if (mouseTimer) {
+            window.clearTimeout(mouseTimer);
+        }
+        if (!cursorVisible) {
+            document.body.style.cursor = "default";
+            cursorVisible = true;
+        }
+        mouseTimer = window.setTimeout(disappearCursor, 5000);
+    })  
+})();
 		</script>
 
 </html>

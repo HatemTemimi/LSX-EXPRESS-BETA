@@ -1,121 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- ========== Meta Tags ========== -->
-    <meta charset="UTF-8">
-    <meta name="description" content="LSXS Visualizer">
-    <meta name="keywords" content="LSXS Visualizer">
-    <meta name="author" content="LSXS Visualizer">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="og:url"           content="http://lsxs.me" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="LSXS Interactive Visualizer" />
-    <meta property="og:description"   content="Visual Simplicity." />
-    <meta property="og:image"         content="/images/slices.png" />
-    <link rel="icon" href="images/favicon3.ico" type="image/gif" >
+    <meta charset="UTF-8" />
+    <meta name="description" content="LSXS Visualizer" />
+    <meta name="keywords" content="LSXS Visualizer" />
+    <meta name="author" content="LSXS Visualizer" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta property="og:url" content="http://lsxs.me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LSXS Interactive Visualizer" />
+    <meta property="og:description" content="Visual Simplicity." />
+    <meta property="og:image" content="/images/slices.png" />
+    <link rel="icon" href="images/favicon3.ico" type="image/gif" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- ========== Title ========== -->
-    <title> LSXS | Home</title> 
+    <title>LSXS | Home</title>
     <!-- ========== Favicon Ico ========== -->
     <!--<link rel="icon" href="fav.ico">-->
     <!-- ========== STYLESHEETS ========== -->
     <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Fonts Icon CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/et-line.css" rel="stylesheet">
-    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/et-line.css" rel="stylesheet" />
+    <link href="assets/css/ionicons.min.css" rel="stylesheet" />
     <!-- Carousel CSS -->
-    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet" />
     <!-- Magnific-popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet" />
     <style>
-        #main-title{
-            text-align: center;color: #18181c; font-size: 6rem; font-weight: bold; letter-spacing: -1px; line-height: 1;
-
+      #main-title {
+        text-align: center;
+        color: #18181c;
+        font-size: 6rem;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1;
+      }
+      @media only screen and (max-width: 768px) {
+        #main-title {
+          font-size: 40px;
         }
-       @media only screen and (max-width: 768px) {
-  #main-title {
-    font-size: 40px;
-  }
-}
+      }
 
-@media only screen and (max-width: 320px) {
-  #main-title {
-    font-size: 30px;
-  }
-}
+      @media only screen and (max-width: 320px) {
+        #main-title {
+          font-size: 30px;
+        }
+      }
 
-#shuffle-component{
-    border-radius: 0 10px 10px 0;max-width:12vw;min-width: 180px;overflow: hidden;
-}
-
-
-     
+      #shuffle-component {
+        border-radius: 0 10px 10px 0;
+        max-width: 12vw;
+        min-width: 180px;
+        overflow: hidden;
+      }
     </style>
-  
-</head>
-<body >
-<div class="loader">
-    <div class="loader-outter"></div>
-    <div class="loader-inner"></div>
-</div>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader-outter"></div>
+      <div class="loader-inner"></div>
+    </div>
 
-<div  class="body-container container-fluid">
-    <a class="menu-btn" href="javascript:void(0)">
+    <div class="body-container container-fluid">
+      <a class="menu-btn" href="javascript:void(0)">
         <i class="ion ion-grid"></i>
-    </a>
-    <div   class="row justify-content-right">
-        
+      </a>
+      <div class="row justify-content-right">
         <!--=================== side menu ====================-->
-        <div style="max-width:12vw;min-width: 170px;" class="col-lg-2 col-md-3 col-12 menu_block">
-            
+        <div
+          style="max-width: 12vw; min-width: 170px"
+          class="col-lg-2 col-md-3 col-12 menu_block"
+        >
+          <!--logo -->
+          <div
+            style="min-width: 90px; max-width: 5vw; height: auto"
+            class="logo_box"
+          >
+            <a style="margin-left: 2.2rem" href="/home">
+              <img
+                src="assets/img/logo/vector/default-monochrome-white.svg"
+                alt="LS-X"
+              />
+            </a>
+            <div style="color: #ab20fd; margin-left: 1.2rem">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/lsxs.visualizer/"
+              >
+                <i class="ion ion-social-instagram"></i>
+              </a>
 
-            <!--logo -->
-            <div style="min-width:90px;max-width:5vw;height:auto;" class="logo_box">
-                <a style="margin-left:2.2rem;" href="/home">
-                    <img src="assets/img/logo/vector/default-monochrome-white.svg" alt="LS-X">
-                           
-                </a>
-                <div style="color:#ab20fd;margin-left: 1.2rem;">
-                <a  target="_blank" href="https://www.instagram.com/lsxs.visualizer/"> <i class="ion ion-social-instagram"></i> </a>
+              <a href="https://www.facebook.com/LSXS.visualizer">
+                <i class="ion ion-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <!--logo end-->
 
-                <a  href="https://www.facebook.com/LSXS.visualizer"> <i class="ion ion-social-facebook"></i> </a>
- 
-                </div>
-           </div>
-            <!--logo end-->
-                 
-            <!--main menu -->
-            <div  class="side_menu_section">
-                <ul class="menu_nav">
-                   
-                    <li class="active">
-                        
-                        <a href="/home">
-                            LS-Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/about">
-                            About 
-                        </a>
-                    </li>
-                     <li>
-                     
-                        <select id="shuffle-component" style=""  class="btn btn-dark" onChange="window.open(this.value,'_blank');">
-                            <option value="#" > Shuffle</option>
-                            <option value="/shuffle?interval=1">Shuffle 30s</option>
-                            <option value="/shuffle?interval=2">Shuffle 60s</option>
-                            <option value="/shuffle?interval=3">Shuffle 90s</option>
-                            <option value="/shuffle?interval=4">Shuffle 180s</option>
-                        </select>
-                    </li>
-                    <!-- <li>
+          <!--main menu -->
+          <div class="side_menu_section">
+            <ul class="menu_nav">
+              <li class="active">
+                <a href="/home"> LS-Home </a>
+              </li>
+              <li>
+                <a href="/about"> About </a>
+              </li>
+              <!-- <li>
+                <select
+                  id="shuffle-component"
+                  class="btn btn-dark"
+                  onChange="window.open(this.value,'_blank');"
+                >
+                  <option value="#">Shuffle</option>
+                  <option value="/shuffle?interval=1">Shuffle 30s</option>
+                  <option value="/shuffle?interval=2">Shuffle 60s</option>
+                  <option value="/shuffle?interval=3">Shuffle 90s</option>
+                  <option value="/shuffle?interval=4">Shuffle 180s</option>
+                </select>
+              </li> -->
+              <!-- <li>
                         <a href="" id="shuffle-new">
                             Hover to shuffle
                         </a>
@@ -133,65 +147,120 @@
                         </a>
 
                     </li> -->
-                    
-                </ul>
+            </ul>
+          </div>
+          <!--main menu end -->
+          <div class="side_menu_section">
+            <h4 class="side_title">Shuffle :</h4>
+            <ul  class="filter_nav">
+              <li>
+                <a
+                  target="_blank"
+                  href="/shuffle?interval=1"
+                  >Fastest</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="/shuffle?interval=2"
+                  >Fast</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="/shuffle?interval=3"
+                  >Slow</a
+                >
+              </li>
+              <li>
+                <a target="_blank"  href="/shuffle?interval=4"
+                  >Slower</a
+                >
+              </li>
+              
+            </ul>
+          </div>
+
+          <!--filter menu -->
+          <div class="side_menu_section">
+            <h4 class="side_title">filter by:</h4>
+            <ul id="filtr-container" class="filter_nav">
+              <li data-filter="*" class="active">
+                <a
+                  onclick="setTitle('Visual Systems')"
+                  href="javascript:void(0)"
+                  >all</a
+                >
+              </li>
+              <li data-filter=".Fluid">
+                <a onclick="setTitle(this.innerHTML)" href="javascript:void(0)"
+                  >Fluids</a
+                >
+              </li>
+              <li data-filter=".Patterns">
+                <a onclick="setTitle(this.innerHTML)" href="javascript:void(0)"
+                  >Patterns</a
+                >
+              </li>
+              <li data-filter=".Tunnels">
+                <a onclick="setTitle(this.innerHTML)" href="javascript:void(0)"
+                  >Tunnels</a
+                >
+              </li>
+              <li data-filter=".Particles">
+                <a onclick="setTitle(this.innerHTML)" href="javascript:void(0)"
+                  >Particles</a
+                >
+              </li>
+              <li data-filter=".Typo">
+                <a onclick="setTitle(this.innerHTML)" href="javascript:void(0)"
+                  >Typo</a
+                >
+              </li>
+              <li data-filter=".Attractors">
+                <a onclick="setTitle(this.innerHTML)" href="javascript:void(0)"
+                  >Attractors</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--filter menu end -->
+
+          <!--social and copyright -->
+          <div class="side_menu_bottom">
+            <div class="side_menu_bottom_inner">
+              <ul class="social_menu">
+                <li>
+                  <a href="#"> <i class="ion ion-social-instagram"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="ion ion-social-facebook"></i> </a>
+                </li>
+              </ul>
+              <div class="copy_right">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <p class="copyright">
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  CCNC.
+                </p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </div>
             </div>
-            <!--main menu end -->
-
-            <!--filter menu -->
-            <div class="side_menu_section">
-                <h4 class="side_title">filter by:</h4>
-                <ul  id="filtr-container"  class="filter_nav">
-                    <li  data-filter="*" class="active"><a onclick="setTitle('Visual Systems')" href="javascript:void(0)" >all</a></li>
-                    <li data-filter=".Fluid"> <a onclick="setTitle(this.innerHTML)" href="javascript:void(0)">Fluids</a></li>
-                    <li data-filter=".Patterns"><a onclick="setTitle(this.innerHTML)" href="javascript:void(0)">Patterns</a></li>
-                    <li data-filter=".Tunnels"><a onclick="setTitle(this.innerHTML)" href="javascript:void(0)">Tunnels</a></li>
-                    <li data-filter=".Particles"><a onclick="setTitle(this.innerHTML)" href="javascript:void(0)">Particles</a></li>
-                    <li data-filter=".Typo"><a onclick="setTitle(this.innerHTML)" href="javascript:void(0)">Typo</a></li>
-                    <li data-filter=".Attractors"> <a onclick="setTitle(this.innerHTML)" href="javascript:void(0)">Attractors</a></li>
-                </ul>
-            </div>
-            <!--filter menu end -->
-
-
-            <!--social and copyright -->
-            <div class="side_menu_bottom">
-                <div class="side_menu_bottom_inner">
-                    <ul class="social_menu">
-                        <li>
-                            <a href="#"> <i class="ion ion-social-instagram"></i> </a>
-                        </li>
-                        <li>
-                            <a href="#"> <i class="ion ion-social-facebook"></i> </a>
-                        </li>
-                    </ul>
-                    <div class="copy_right">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> CCNC.</p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-            </div>
-            <!--social and copyright end -->
-
+          </div>
+          <!--social and copyright end -->
         </div>
         <!--=================== side menu end====================-->
 
-        
-
-       
         <!--=================== content body ====================-->
-        
-        <div class="col-lg-10 col-md-9 col-12 body_block  align-content-center" >
-            
-            <!--=================== filter portfolio start====================-->
-             <h2  id="main-title" style="font-size: 3.5rem;" >Visual Systems</h2>
-            
 
-            <div class="portfolio gutters grid img-container">
-                
-                <div class="grid-sizer  col-sm-12 col-md-6 col-lg-3"></div>
-                <!-- <div class="grid-item   col-sm-12 col-md-6 col-lg-3">
+        <div class="col-lg-10 col-md-9 col-12 body_block align-content-center">
+          <!--=================== filter portfolio start====================-->
+          <h2 id="main-title" style="font-size: 3.5rem">Visual Systems</h2>
+
+          <div class="portfolio gutters grid img-container">
+            <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
+            <!-- <div class="grid-item   col-sm-12 col-md-6 col-lg-3">
                     <select  class="btn btn-secondary-outline" onChange="window.open(this.value,'_blank');">
                         <option value="#"> Shuffle Visuals</option>
                         <option value="/shuffle?interval=1">Shuffle 30</option>
@@ -201,105 +270,82 @@
                     </select>
 
                 </div> -->
-                <% arrayOfObjects.forEach( (element,index) => { %>
-                 <div class="grid-item <%= element.category %>  col-sm-12 col-md-6 col-lg-3">
-                    <a target="_blank" href=<%= element.link %> title=<%= element.name %>>
-                        <div class="project_box_one">
-                            <img src=<%= element.image %> alt="pro1" />
-                            <div class="product_info">
-                                <div class="product_info_text">
-                                    <div class="product_info_text_inner">
-                                         <i style="color:blueviolet" class="ion ion-play ion-5x"></i> 
-                                         
-                                         <h4><%= element.name %></h4>
-                                        
-                                     
-                                    </div>
-                                     
-                                </div>
-                                
-                               
-                                  <!-- <a style="margin-left:100%;" href="https://www.facebook.com/sharer/sharer.php?u=ls-x.com" target="_blank"><i class="fa fa-share fa-2x"></i>  </a> -->
-                                
-                            </div>
-                            
-                            
-                        </div>
-                    </a>
+            <% arrayOfObjects.forEach( (element,index) => { %>
+            <div
+              class="
+                grid-item
+                <%=
+                element.category
+                %>
+                col-sm-12 col-md-6 col-lg-3
+              "
+            >
+              <a target="_blank" href=<%= element.link %>>
+              <title><%= element.name %></title>
+                <div class="project_box_one">
+                  <img src=<%= element.image %> alt="pro1" />
+                  <div class="product_info">
+                    <div class="product_info_text">
+                      <div class="product_info_text_inner">
+                        <i
+                          style="color: blueviolet"
+                          class="ion ion-play ion-5x"
+                        ></i>
+
+                        <h4><%= element.name %></h4>
+                      </div>
+                    </div>
+
+                    <!-- <a style="margin-left:100%;" href="https://www.facebook.com/sharer/sharer.php?u=ls-x.com" target="_blank"><i class="fa fa-share fa-2x"></i>  </a> -->
+                  </div>
                 </div>
-                 <% }) %>
-                
-               
+              </a>
             </div>
-            <!--=================== filter portfolio end====================-->
+            <% }) %>
+          </div>
+          <!--=================== filter portfolio end====================-->
         </div>
         <!--=================== content body end ====================-->
+      </div>
     </div>
-</div>
 
-<script>
+    <script>
+      // window.addEventListener('load',()=>{
+      //     let val = document.getElementById('main-title').innerHTML;
 
+      // })
 
-    // window.addEventListener('load',()=>{
-    //     let val = document.getElementById('main-title').innerHTML;
-        
+      function setTitle(value) {
+        document.getElementById("main-title").innerHTML = value;
+      }
 
-    // })
-
-    function setTitle(value){
-     document.getElementById('main-title').innerHTML = value;
-
-
-
-    }
-
-    window.addEventListener('load',()=>{
+      window.addEventListener("load", () => {
         //let a = document.getElementsByClassName('shuffle-intervals');
         // $('.shuffle-intervals').hide('fast');
-
-       
-           
-
-      
-        
-
         // $('#shuffle-new').hover(()=>{
         //     $('.shuffle-intervals').fadeIn('fast');
         // })
+      });
+    </script>
 
-        
-        
-    
-    })
-
-       
-
-   
-        
-
-
-
-
-</script>
-
-<!-- jquery -->
-<script src="assets/js/jquery.min.js"></script>
-<!-- bootstrap -->
-<script src="assets/js/popper.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/waypoints.min.js"></script>
-<!--slick carousel -->
-<script src="assets/js/slick.min.js"></script>
-<!--Portfolio Filter-->
-<script src="assets/js/imgloaded.js"></script>
-<script src="assets/js/isotope.js"></script>
-<!-- Magnific-popup -->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<!--Counter-->
-<script src="assets/js/jquery.counterup.min.js"></script>
-<!-- WOW JS -->
-<script src="assets/js/wow.min.js"></script>
-<!-- Custom js -->
-<script src="assets/js/main.js"></script>
-</body>
+    <!-- jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <!--slick carousel -->
+    <script src="assets/js/slick.min.js"></script>
+    <!--Portfolio Filter-->
+    <script src="assets/js/imgloaded.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <!-- Magnific-popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--Counter-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom js -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
