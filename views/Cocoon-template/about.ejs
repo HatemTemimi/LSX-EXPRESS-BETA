@@ -74,7 +74,7 @@
                             About
                         </a>
                     </li>   
-                    <li>
+                    <!-- <li>
                      
                         <select id="shuffle-component" style=""  class="btn btn-dark" onChange="window.open(this.value,'_blank');">
                             <option value="#" >Shuffle </option>
@@ -83,10 +83,39 @@
                             <option value="/shuffle?interval=3">Shuffle 90s</option>
                             <option value="/shuffle?interval=4">Shuffle 180s</option>
                         </select>
-                    </li>
+                    </li> -->
                    
                 </ul>
-            </div>
+            </div> 
+            <div class="side_menu_section">
+            <h4 class="side_title">Shuffle :</h4>
+            <ul  class="filter_nav">
+              <li>
+                <a
+                  target="_blank"
+                  href="/shuffle?interval=1"
+                  >Fastest</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="/shuffle?interval=2"
+                  >Fast</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="/shuffle?interval=3"
+                  >Slow</a
+                >
+              </li>
+              <li>
+                <a target="_blank"  href="/shuffle?interval=4"
+                  >Slower</a
+                >
+              </li>
+              
+            </ul>
+          </div>
+
             <!--main menu end -->
 
             <!--filter menu -->
