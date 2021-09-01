@@ -1,23 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="author" content="3D Viewer" />
-    <title>Simulating Depth of Field with Particles using the Blurry Library | Codrops</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="/Blurry/main.css" rel="stylesheet" type="text/css" /> 
+
+<%- include('partials/bodytop.ejs') %>
+    <link href="/Blurry/main.css" rel="stylesheet" type="text/css" />
 
     <script src="/Blurry/libs/dependencies/three.js"></script>
     <script src="/Blurry/libs/dependencies/OrbitControls.js"></script>
     <script src="/Blurry/libs/dependencies/jquery.js"></script>
-    
+
 
     <!-- globals needs to be included before every shader -->
     <script src="/Blurry/libs/globals.js"></script>
 
     <script src="/Blurry/libs/geometries/line.js"></script>
     <script src="/Blurry/libs/geometries/quad.js"></script>
- 
+
     <script src="/Blurry/libs/shaders/shaderpass.js"></script>
     <script src="/Blurry/libs/shaders/postproc.js"></script>
     <script src="/Blurry/libs/shaders/line.js"></script>

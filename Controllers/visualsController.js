@@ -528,6 +528,13 @@ const arrayOfObjects = [
     image: "/images/candlewickturing.png",
   },
   {
+    name: "Blurry",
+    category: "particles",
+    link: "/blurry",
+    description: "can't c well.",
+    image: "/images/Blurry.png",
+  },
+  {
     name: "Warpbuffer",
     category: "Turing",
     link: "/warpbuffer",
@@ -619,13 +626,7 @@ const arrayOfObjects = [
     description: "what kind of diode ?",
     image: "/images/suckerpunch-diode.png",
   },
-  // {
-  //   name: "Trap Style",
-  //   category: "particles",
-  //   link: "/trapstyle",
-  //   description: "felt into a trap.",
-  //   image: "/images/trapstyle.png",
-  // },
+
   {
     name: "Turing-fluid",
     category: "Patterns Fluid",
