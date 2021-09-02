@@ -2,7 +2,7 @@ let path = require("path");
 
 const shuffle = (req, res) => {
   const shuffle = true;
-  let aliasarr = ['looper','joy','sin','420','Downr','Virtigo'];
+  let aliasarr = ['Looper','Joy','Sin','420','Downr','Virtigo','Ease'];
   let alias = aliasarr[Math.floor(Math.random() * aliasarr.length)];
   let arr = [
     //"./trapstyle.ejs",
@@ -60,26 +60,23 @@ const shuffle = (req, res) => {
     "./ScrollSpiral/black&white.ejs", 
     "./ScrollSpiral/grow-scales.ejs", 
     "./hxdj.ejs",
+    "./jellyfish.ejs",
     "./ScrollSpiral/spiralgate.ejs",
     "./InfiniteTubes-master/swim-tube.ejs",
     
   ];
 
-  let shufflevar = arr[Math.floor(Math.random() * arr.length)];
+  let shufflevar = arr[Math.round(Math.random() * arr.length)];
   console.log("chosen : " + shufflevar);
   if (req.query.interval) {
     if (!isNaN(req.query.interval)) {
-      if (req.query.interval == 2) {
-        console.log("60secs");
+      if (req.query.interval === 2) {
         res.render(`${shufflevar}`, { loop: true, interval: 60000, alias });
-      } else if (req.query.interval == 3) {
-        console.log("120secs");
+      } else if (req.query.interval === 3) {
         res.render(`${shufflevar}`, { loop: true, interval: 120000,alias });
-      } else if (req.query.interval == 4) {
-        console.log("3 mins");
+      } else if (req.query.interval === 4) {
         res.render(`${shufflevar}`, { loop: true, interval: 180000,alias });
       } else {
-        console.log("30secs");
         res.render(`${shufflevar}`, { loop: true, interval: 30000,alias });
       }
     } else {
@@ -505,6 +502,13 @@ const arrayOfObjects = [
     link: "/particles",
     description: "it might be an animal.",
     image: "/images/particles.png",
+  },
+  {
+    name: "Jellys",
+    category: "Particles",
+    link: "/jellyfish",
+    description: "it might be an animal.",
+    image: "/images/Jellyfish.png",
   },
   {
     name: "Triangles Tube",

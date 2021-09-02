@@ -1,5 +1,12 @@
 <html>
     <head>
+     <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VPBLJ18H17');
+      </script>
       <link rel="icon" href="images/favicon3.ico" type="image/gif" >
         <style>
             body {
@@ -36,9 +43,9 @@ var mouseX = 0, mouseY = 0;
 // Many Thanks to @teddarcuri
 // Uncomment code below for tunnel steering!
 // You will fly through the walls like in Mario Kart, haha.
-var windowHalfX = window.innerWidth / 2;
-var windowHalfY = window.innerHeight / 2;
-document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+// var windowHalfX = window.innerWidth / 2;
+// var windowHalfY = window.innerHeight / 2;
+// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
 scene.add(camera);
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -50,14 +57,14 @@ window.addEventListener( 'resize', onWindowResize, false );
 
 // Console
 var Controls = function() {
-  this.speed = 2;
-  this.rotation = 0;
+  this.speed = Math.random() * 10;
+  this.rotation = Math.random() * 15 ;
 };
 
-var text = new Controls(),
-    gui = new dat.GUI();
-    gui.add(text, 'speed', 0, 10);
-    gui.add(text, 'rotation',0,15);
+var text = new Controls();
+//     gui = new dat.GUI();
+//     gui.add(text, 'speed', 0, 10);
+//     gui.add(text, 'rotation',0,15);
 
 /////////////////////////////////////////
 

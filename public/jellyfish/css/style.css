@@ -11,11 +11,32 @@
 body{
   background:#b2cbfe;
   width:100%;
-  height:100%;
+  /*height:100%;*/
   color:#FFF;
-	background: -moz-linear-gradient(center bottom, #2d445b 0%,#b2cbfe 100%);
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2d445b),color-stop(1, #b2cbfe));
+
+
+  background: linear-gradient(-45deg, #21fc0d, #e73c7e, #8f00f1, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+/*	background: -moz-linear-gradient(center bottom,#2C3E50 0%, #4CA1AF 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2C3E50),color-stop(1, #4CA1AF ));*/
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
 
 a {
   text-decoration:none;

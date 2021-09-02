@@ -25,11 +25,11 @@ function LocalParam(){
 function Param(){
 
   //jellyfish
-  this.jCount = 5;
+  this.jCount =  Math.round(Math.random() * (120 - 10) + 10);
   this.jScale = 4;
-  this.jScaleRandom = 0;
+  this.jScaleRandom = Math.round(Math.random() * (6));
   this.jTurb = 0.05;
-  this.jSpeed = 0.01;
+  this.jSpeed = Math.random() * (0.07 - 0.01) + 0.01;
   this.pBbox = [80,80,80];
 
 }
