@@ -1,4 +1,5 @@
-<html><head>
+<html>
+<head>
  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){window.dataLayer.push(arguments);}
@@ -9,7 +10,9 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>LSXS - Jellyfish</title>
-<link rel="icon" href="images/favicon3.ico" type="image/gif" >
+<link rel="icon" href="images/favicon3.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon3.ico" type="image/x-icon" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
 <link href="/jellyfish/css/style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="/jellyfish/js/lib/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="/jellyfish/js/lib/mjs.js"></script>
@@ -184,4 +187,5 @@ console.log(document.getElementById('jCount').value);
 
     </script>
 </body>
-</html>
+
+<%- include('partials/custom-loop-script.ejs') %>
