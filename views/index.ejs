@@ -88,6 +88,16 @@
         border-radius: 100px;
         padding: 10px 25px;
       }
+
+      .blink_me {
+        animation: blinker 1s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
     </style>
   </head>
   <body>
@@ -100,9 +110,11 @@
               <h1 style="font-family: LSXFONT">
                 <strong>Welcome to LSXS</strong>
               </h1>
-              <a href="/home" role="button" onclick="cameraSet()"
-                ><p class="small">– Where is the action ? –</p></a
-              >
+
+              <p class="small" style="">For optimal experience we recommend using Google Chrome or OperaGx </p>
+               <a href="/home" role="button" onclick="cameraSet()"
+                              ><p class="small blink_me">– Join the Party ! –</p></a
+                            >
               <!--.btn.btn-danger(href='#',role='button', onclick='cameraSet()') + ADD LINE-->
             </div>
           </div>
