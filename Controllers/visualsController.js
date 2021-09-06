@@ -440,6 +440,13 @@ const arrayOfObjects = [
     image: "/images/swimtube.png",
   },
   {
+    name: "Triangles Tube",
+    category: "Tunnels",
+    link: "/triangles",
+    description: "it might be an animal.",
+    image: "/images/triangles.png",
+  },
+  {
     name: "Blood Wagon",
     category: "Tunnels",
     link: "/bloodcells",
@@ -460,13 +467,7 @@ const arrayOfObjects = [
     description: "hope into the spiral.",
     image: "/images/spiralforge.png",
   },
-  {
-    name: "Spiced Rainbow Beans",
-    category: "Particles Patterns",
-    link: "/spiced-rainbow-beans",
-    description: "They don't taste the same.",
-    image: "/images/smoked-rainbow-beans.png",
-  },
+
  
   {
     name: "Digicloud",
@@ -490,11 +491,11 @@ const arrayOfObjects = [
     image: "/images/torus-tunnel.png",
   },
   {
-    name: "Cell Division",
-    category: "Patterns Fluid",
-    link: "/cell-division",
+    name: "Jellys",
+    category: "Particles",
+    link: "/jellyfish",
     description: "it might be an animal.",
-    image: "/images/celldivision.png",
+    image: "/images/Jellyfish.png",
   },
   {
     name: "Particles Tube",
@@ -504,18 +505,34 @@ const arrayOfObjects = [
     image: "/images/particles.png",
   },
   {
-    name: "Jellys",
-    category: "Particles",
-    link: "/jellyfish",
-    description: "it might be an animal.",
-    image: "/images/Jellyfish.png",
+    name: "Fractal Blue",
+    category: "Patterns",
+    link: "/fractal_blue",
+    description: "triangle fractal patterns",
+    image: "/images/fractal-blue.png",
   },
   {
-    name: "Triangles Tube",
+    name: "Spiral Gate",
     category: "Tunnels",
-    link: "/triangles",
+    link: "/spiralgate",
+    description: "Gate to somewhere",
+    image: "/images/spiralgate.png",
+  },
+
+  {
+    name: "Cell Division",
+    category: "Patterns Fluid",
+    link: "/cell-division",
     description: "it might be an animal.",
-    image: "/images/triangles.png",
+    image: "/images/celldivision.png",
+  },
+
+  {
+    name: "Spiced Rainbow Beans",
+    category: "Particles Patterns",
+    link: "/spiced-rainbow-beans",
+    description: "They don't taste the same.",
+    image: "/images/smoked-rainbow-beans.png",
   },
   {
     name: "Coupled Turing",
@@ -580,13 +597,7 @@ const arrayOfObjects = [
     description: "In for some beans ?",
     image: "/images/smoked-rainbow-beans1.png",
   },
-  {
-    name: "Spiral Gate",
-    category: "Tunnels",
-    link: "/spiralgate",
-    description: "Gate to somewhere",
-    image: "/images/spiralgate.png",
-  },
+
  
   {
     name: "Candlewick",
@@ -681,13 +692,7 @@ const arrayOfObjects = [
     description: "Grey Acrylic Surprise",
     image: "/images/acrylicfluid.png",
   },
-  {
-    name: "Fractal Blue",
-    category: "Patterns",
-    link: "/fractal_blue",
-    description: "triangle fractal patterns",
-    image: "/images/fractal-blue.png",
-  },
+
   {
     name: "WebWorker",
     category: "Patterns",
@@ -744,13 +749,13 @@ const arrayOfObjects = [
     description: "Hop on the milkyway !",
     image: "/images/milkyway.png",
   },
-  {
-    name: "Trappist Chemist",
-    category: "Fluid",
-    link: "/trappist",
-    description: "Are you a chemist ?",
-    image: "/images/trappist.png",
-  },
+  // {
+  //   name: "Trappist Chemist",
+  //   category: "Fluid",
+  //   link: "/trappist",
+  //   description: "Are you a chemist ?",
+  //   image: "/images/trappist.png",
+  // },
   {
     name: "Suckerpunch",
     category: "Particles Fluid",

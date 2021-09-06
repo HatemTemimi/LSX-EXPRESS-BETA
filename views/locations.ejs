@@ -221,6 +221,12 @@ h = ( 360 * ( 1.0 + time ) % 360 ) / 360;
 renderer.render( scene, camera );
 }
     </script>
+    <script>
+        window.addEventListener('load', (event) => {
+            document.body.style.cursor = "none";
+            load();
+        });
+    </script>
    
   
    <%- include('partials/custom-loop-script.ejs') %>

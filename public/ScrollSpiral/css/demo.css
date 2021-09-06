@@ -18,6 +18,7 @@ html {
 }
 
 body {
+	cursor: none;
 	font-family: 'Roboto Mono', monospace;
 	color: #fff;
 	background: #000;
@@ -121,6 +122,15 @@ main::before {
 	height: 1.5em;
 	width: 1px;
 	background: #fff;
+	-moz-animation: cssAnimation 0s ease-in 5s forwards;
+	/* Firefox */
+	-webkit-animation: cssAnimation 0s ease-in 5s forwards;
+	/* Safari and Chrome */
+	-o-animation: cssAnimation 0s ease-in 5s forwards;
+	/* Opera */
+	animation: cssAnimation 0s ease-in 5s forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 }
 
 .content--main::after {
@@ -134,6 +144,30 @@ main::before {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-indent: 2px;
+	-moz-animation: cssAnimation 0s ease-in 5s forwards;
+	/* Firefox */
+	-webkit-animation: cssAnimation 0s ease-in 5s forwards;
+	/* Safari and Chrome */
+	-o-animation: cssAnimation 0s ease-in 5s forwards;
+	/* Opera */
+	animation: cssAnimation 0s ease-in 5s forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+	to {
+		width:0;
+		height:0;
+		overflow:hidden;
+	}
+}
+@-webkit-keyframes cssAnimation {
+	to {
+		width:0;
+		height:0;
+		visibility:hidden;
+	}
 }
 
 .content--header {

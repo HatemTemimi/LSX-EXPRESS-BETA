@@ -266,6 +266,12 @@
 })();
     </script>
     <p hidden id="interval" hidden><%= interval %></p>
+    <script>
+        window.addEventListener('load', (event) => {
+            document.body.style.cursor = "none";
+            load();
+        });
+    </script>
     
 </body>
 <%- include('partials/custom-loop-script.ejs') %>

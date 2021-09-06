@@ -305,7 +305,9 @@ image.src = alias;
 // });
 
 window.addEventListener('load',function(){
-  $('.myControlPanel__sectionFields').hide();
+
+    document.body.style.cursor = "none";
+    $('.myControlPanel__sectionFields').hide();
   // let buttons = document.getElementsByTagName('button');
   // buttons[0].click();
   $('.myControlPanel').mouseover(function(){

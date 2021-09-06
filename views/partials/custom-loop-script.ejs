@@ -1,5 +1,11 @@
  
 <p hidden id="interval"><%= interval %></p>
+<script>
+    window.addEventListener('load', (event) => {
+        document.body.style.cursor = "none";
+        load();
+    });
+</script>
 <% if (loop == true) { %>
     <script>
         let tmp = document.getElementById('interval').innerHTML;

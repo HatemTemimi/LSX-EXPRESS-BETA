@@ -9,6 +9,7 @@
 }
 
 body{
+  cursor: none;
   background:#b2cbfe;
   width:100%;
   /*height:100%;*/

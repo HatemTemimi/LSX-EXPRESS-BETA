@@ -9,6 +9,7 @@
 }
 
 body {
+	cursor: none;
 	margin: 0;
 	--color-text: #fff;
 	--color-bg: #000;
@@ -17,8 +18,8 @@ body {
 	--color-alt: #3ba2e5;
 	--color-info: #e93f3b;
 	color: var(--color-text);
-	background-color: var(--color-bg);font-
-	family: ltc-bodoni-175, serif;
+	background-color: var(--color-bg);
+	font-family: ltc-bodoni-175, serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

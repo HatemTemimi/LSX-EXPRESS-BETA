@@ -195,6 +195,12 @@ console.log(document.getElementById('jCount').value);
 
 
     </script>
+    <script>
+        window.addEventListener('load', (event) => {
+            document.body.style.cursor = "none";
+            load();
+        });
+    </script>
 </body>
 
 <%- include('partials/custom-loop-script.ejs') %>

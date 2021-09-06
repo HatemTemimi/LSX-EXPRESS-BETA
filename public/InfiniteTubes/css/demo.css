@@ -9,6 +9,7 @@
 
 
 body {
+	cursor: none;
 	--text-color: #f0f0f0;
 	--background-color: #5f5c58;
 	--link-color: #e2bd7d;
