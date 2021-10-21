@@ -1565,10 +1565,10 @@ img {
   font-size: 36px;
   text-align: center;
   position: fixed;
-  right: 22px;
+  right: 21px;
   display: none;
   opacity: 0;
-  bottom: 150px;
+  bottom: 170px;
   padding: 3px 0;
   background-color: #fff;
   z-index: 9999;
