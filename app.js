@@ -2,11 +2,34 @@ const express = require("express");
 var bodyParser = require("body-parser");
 var compression = require('compression')
 const visualRoutes = require("./routes/visuals");
+var favicon = require('serve-favicon');
+var path = require('path');
+
+
+const shouldCompress = (req, res) => {
+  if (req.headers['x-no-compression']) {
+    // don't compress responses if this request header is present
+    return false;
+  }
+
+  // fallback to standard compression
+  return compression.filter(req, res);
+};
+
 
 
 const app = express();
-app.use(compression()); //Compress all routes
+
+app.use(compression({
+  // filter decides if the response should be compressed or not,
+  // based on the `shouldCompress` function above
+  filter: shouldCompress,
+  // threshold is the byte threshold for the response body size
+  // before compression is considered, the default is 1kb
+  threshold: 0
+}));
 app.use(express.static(__dirname + '/public'));
+app.use(favicon(path.join(__dirname, 'public', 'images/favicon3.ico')));
 app.set("view engine", "ejs");
 
 
