@@ -46,4 +46,6 @@ app.listen(port, host, function() {
   console.log("Server started.......");
 });
 
+module.exports = app;
+
 //middleware && static files, remember: middleware is any software that deals with the request before it becomes a reponse
