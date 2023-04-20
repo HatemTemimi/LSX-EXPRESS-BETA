@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const visualsController = require("../Controllers/visualsController");
+const visualsController = require("../controllers/visualsController");
 
 router.get("/slices", visualsController.slices);
 router.get("/jellyfish", visualsController.jellyfish);
