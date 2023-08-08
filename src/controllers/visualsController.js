@@ -6,8 +6,8 @@ const shuffle = (req, res) => {
   let alias = aliasarr[Math.floor(Math.random() * aliasarr.length)];
   let arr = [
     //"./trapstyle.ejs",
-    "./mindblow-turing-spots.ejs",
-    "./slices.ejs",
+    " mindblow-turing-spots.ejs",
+    " slices.ejs",
     "./man-o-warp.ejs", // not loading chrome
     "./suturefluid-mk2-2M.ejs",
     "./inline-webworker-thread.ejs",
@@ -160,10 +160,10 @@ const webworker = (req, res) => {
 };
 
 const index = (req, res) => {
-  res.render("./index.ejs");
+  res.render("index");
 };
 const home = (req, res) => {
-  res.render("Cocoon-template/home.ejs", { arrayOfObjects: arrayOfObjects });
+  res.render("../views/Cocoon-template/home.ejs", { arrayOfObjects: arrayOfObjects });
 };
 const error = (req, res) => {
   res.render("./abandoned-planet.ejs");

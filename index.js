@@ -1,7 +1,7 @@
 const express = require("express");
 var bodyParser = require("body-parser");
 var compression = require('compression')
-const visualRoutes = require("./routes/visuals");
+const visualRoutes = require("./src/routes/visuals");
 var favicon = require('serve-favicon');
 var path = require('path');
 
@@ -30,12 +30,15 @@ app.use(compression({
 }));
 app.use(express.static(__dirname + '/public'));
 app.use(favicon(path.join(__dirname, 'public', 'images/favicon3.ico')));
+app.set('views', __dirname + '/src/views');
 app.set("view engine", "ejs");
 
 
 
 app.use(express.urlencoded({ extended: true })); //middleware packed up with EXPRESS framework to handle URL data
 //app.use(bodyParser.urlencoded({ extended: false }));
+
+
 app.use(express.json());
 
 app.use(visualRoutes);
