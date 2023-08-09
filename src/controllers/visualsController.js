@@ -5,64 +5,64 @@ const shuffle = (req, res) => {
   let aliasarr = ['Looper','Joy','Sin','420','Downr','Virtigo','Ease'];
   let alias = aliasarr[Math.floor(Math.random() * aliasarr.length)];
   let arr = [
-    //"./trapstyle.ejs",
-    " mindblow-turing-spots.ejs",
-    " slices.ejs",
-    "./man-o-warp.ejs", // not loading chrome
-    "./suturefluid-mk2-2M.ejs",
-    "./inline-webworker-thread.ejs",
-    "./jamfactory.ejs", // not loading chrome
-    "./turing-fluid.ejs",
-    "./acrylic-fluid.ejs",
-    //"./fractalfluid.ejs",
-    //"./trappist.ejs",
-    //"./hodgepodge.ejs",
-    //"./edgebatch.ejs", laggy
-    "./suckerpunch.ejs",
-    "./viscousfingering-2M.ejs", // not loading chrome linux
-    //"./citylab.ejs",
-    "./suturefluid-fogzone-2M.ejs", //not loading chrome linux
+    //"trapstyle",
+    " mindblow-turing-spots",
+    " slices",
+    "man-o-warp", // not loading chrome
+    "suturefluid-mk2-2M",
+    "inline-webworker-thread",
+    "jamfactory", // not loading chrome
+    "turing-fluid",
+    "acrylic-fluid",
+    //"fractalfluid",
+    //"trappist",
+    //"hodgepodge",
+    //"edgebatch", laggy
+    "suckerpunch",
+    "viscousfingering-2M", // not loading chrome linux
+    //"citylab",
+    "suturefluid-fogzone-2M", //not loading chrome linux
      //not loading chrome linux
-    //"./egregore.ejs", laggy
-    "./fluid-giraffe.ejs",
-    "./DragonTrack2017.ejs",
-    //"./touchy-physarum-fluid-mix.ejs",
-    //"./inksplash.ejs", // not loading chrome linux laggy
-    "./smoked-rainbow-beans.ejs",
-    "./smoked-rainbow-beans-spiced-with-floating-inversions.ejs",
-    "./candlewick.ejs",
-    "./candlewickturing.ejs",
-    "./networth.ejs",
-    "./coupled-Turing-pattern-fluid.ejs",
-    "./cell-division.ejs",
-    "./Bubbles.ejs",
-    "./InfiniteTubes-master/triangles.ejs",
-    "./InfiniteTubes-master/particles.ejs",
-    "./InfiniteTubes-master/blood-cells.ejs",
-    "./InfiniteTubes-master/brick-tunnel.ejs",
-    "./InfiniteTubes-master/swim-tube.ejs",
-    //"./suckerpunch-diode.ejs", // 404
-    "./jamfactory.ejs", // not loading chrome linux
-    // "./bleedingedge.ejs",
-    "./milkyway-bivariate1.ejs",
-    "./warpbuffer.ejs",
-    "./traffic-ohio.ejs",
-    "./digicloud.ejs",
-    "./locations.ejs",
-    "./torus-tunnel.ejs",
-    "./ScrollSpiral/spiralforge.ejs",
-    "./ScrollSpiral/spiralgate.ejs",
-    //"./edgebatch.ejs",
-    "./InfiniteTubes-master/blood-cells.ejs", 
-    "./InfiniteTubes-master/brick-tunnel.ejs",
-    "./InfiniteTubes-master/swim-tube.ejs",
-    "./ScrollSpiral/black-nebula.ejs", 
-    "./ScrollSpiral/black&white.ejs", 
-    "./ScrollSpiral/grow-scales.ejs", 
-    "./hxdj.ejs",
-    "./jellyfish.ejs",
-    "./ScrollSpiral/spiralgate.ejs",
-    "./InfiniteTubes-master/swim-tube.ejs",
+    //"egregore", laggy
+    "fluid-giraffe",
+    "DragonTrack2017",
+    //"touchy-physarum-fluid-mix",
+    //"inksplash", // not loading chrome linux laggy
+    "smoked-rainbow-beans",
+    "smoked-rainbow-beans-spiced-with-floating-inversions",
+    "candlewick",
+    "candlewickturing",
+    "networth",
+    "coupled-Turing-pattern-fluid",
+    "cell-division",
+    "Bubbles",
+    "triangles",
+    "particles",
+    "blood-cells",
+    "brick-tunnel",
+    "swim-tube",
+    //"suckerpunch-diode", // 404
+    "jamfactory", // not loading chrome linux
+    // "bleedingedge",
+    "milkyway-bivariate1",
+    "warpbuffer",
+    "traffic-ohio",
+    "digicloud",
+    "locations",
+    "torus-tunnel",
+    "spiralforge",
+    "spiralgate",
+    //"edgebatch",
+    "blood-cells", 
+    "brick-tunnel",
+    "swim-tube",
+    "black-nebula", 
+    "black&white", 
+    "grow-scales", 
+    "hxdj",
+    "jellyfish",
+    "spiralgate",
+    "swim-tube",
     
   ];
 
@@ -86,23 +86,23 @@ const shuffle = (req, res) => {
 };
 
 const bubbles = (req, res) => {
-  res.render("./Bubbles.ejs", { loop: false, interval: 0 });
+  res.render("Bubbles", { loop: false, interval: 0 });
 };
 
 const citylab = (req, res) => {
-  res.render("./citylab.ejs", { loop: false, interval: 0 });
+  res.render("citylab", { loop: false, interval: 0 });
 };
 
 const hadleyAttractor = (req, res) => {
-  res.render("./hadley-attractor-mk2.ejs", { loop: false, interval: 0 });
+  res.render("hadley-attractor-mk2", { loop: false, interval: 0 });
 };
 
 const smokedRainbowBeans = (req, res) => {
-  res.render("./smoked-rainbow-beans.ejs", { loop: false, interval: 0, alias:'Rainbow Beans' });
+  res.render("smoked-rainbow-beans", { loop: false, interval: 0, alias:'Rainbow Beans' });
 };
 
 const SpicedRainbowBeans = (req, res) => {
-  res.render("./smoked-rainbow-beans-spiced-with-floating-inversions.ejs", {
+  res.render("smoked-rainbow-beans-spiced-with-floating-inversions", {
     loop: false,
     interval: 0,
     alias: 'Beans'
@@ -110,212 +110,212 @@ const SpicedRainbowBeans = (req, res) => {
 };
 
 const candlewick = (req, res) => {
-  res.render("./candlewick.ejs", { loop: false, interval: 0 ,alias:'candlewick'});
+  res.render("candlewick", { loop: false, interval: 0 ,alias:'candlewick'});
 };
 
 const suckerpunch = (req, res) => {
-  res.render("./suckerpunch.ejs", { loop: false, interval: 0,alias:'suckerpunch' });
+  res.render("suckerpunch", { loop: false, interval: 0,alias:'suckerpunch' });
 };
 
 const trapstyle = (req, res) => {
-  res.render("./trapstyle.ejs", { loop: false, interval: 0,alias:'trapstyle' });
+  res.render("trapstyle", { loop: false, interval: 0,alias:'trapstyle' });
 };
 const trappist = (req, res) => {
-  res.render("./trappist.ejs", { loop: false, interval: 0,alias:'trappist' });
+  res.render("trappist", { loop: false, interval: 0,alias:'trappist' });
 };
 
 const milkyway = (req, res) => {
-  res.render("./milkyway.ejs", { loop: false, interval: 0, alias: 'milkyway' });
+  res.render("milkyway", { loop: false, interval: 0, alias: 'milkyway' });
 };
 
 const turingSpots = (req, res) => {
-  res.render("./mindblow-turing-spots.ejs", { loop: false, interval: 0, alias:'turing spots' });
+  res.render("mindblow-turing-spots", { loop: false, interval: 0, alias:'turing spots' });
 };
 const pickoverAttractor = (req, res) => {
-  res.render("./pickover-attractor.ejs", { loop: false, interval: 0 });
+  res.render("pickover-attractor", { loop: false, interval: 0 });
 };
 const hodgepodge = (req, res) => {
-  res.render("./hodgepodge.ejs", { loop: false, interval: 0,alias:'hodgepodge' });
+  res.render("hodgepodge", { loop: false, interval: 0,alias:'hodgepodge' });
 };
 const milkywank = (req, res) => {
-  res.render("./man-o-warp.ejs", { loop: false, interval: 0,alias:'milkywank' });
+  res.render("man-o-warp", { loop: false, interval: 0,alias:'milkywank' });
 };
 const thomasattractor = (req, res) => {
-  res.sendFile(path.join(__dirname, "../views/thomas-attractor-mk2.html"));
-  res.render('./thomas-attractor-mk2.ejs');
+  res.sendFile(path.join(__dirname, ".views/thomas-attractor-mk2.html"));
+  res.render('thomas-attractor-mk2');
 };
 const halvorsenattractor = (req, res) => {
- // res.sendFile(path.join(__dirname, "../views/halvorsen-attractor-mk2.html"));
-  res.render('./halvorsen-attractor-mk2.ejs');
+ // res.sendFile(path.join(__dirname, ".views/halvorsen-attractor-mk2.html"));
+  res.render('halvorsen-attractor-mk2');
 };
 
 const acrylicfluid = (req, res) => {
-  res.render("./acrylic-fluid.ejs", { loop: false, interval: 0,alias:'Acrylic' });
+  res.render("acrylic-fluid", { loop: false, interval: 0,alias:'Acrylic' });
 };
 const fractalfluid = (req, res) => {
-  res.render("./ScrollSpiral/blue-haze.ejs", { loop: false, interval: 0,alias:'Blue' });
+  res.render("blue-haze", { loop: false, interval: 0,alias:'Blue' });
 };
 const webworker = (req, res) => {
-  res.render("./inline-webworker-thread.ejs", { loop: false, interval: 0,alias:'WebWorker' });
+  res.render("inline-webworker-thread", { loop: false, interval: 0,alias:'WebWorker' });
 };
 
 const index = (req, res) => {
   res.render("index");
 };
 const home = (req, res) => {
-  res.render("../views/Cocoon-template/home.ejs", { arrayOfObjects: arrayOfObjects });
+  res.render("home", { arrayOfObjects: arrayOfObjects });
 };
 const error = (req, res) => {
-  res.render("./abandoned-planet.ejs");
+  res.render("abandoned-planet");
 };
-//const index = (req,res) => { res.render('./welcomeoverlay.ejs');}
+//const index = (req,res) => { res.render('welcomeoverlay');}
 
 const turing_fluid = (req, res) => {
-  res.render("./turing-fluid.ejs", { loop: false, interval: 0,alias:'Turing Fluid' });
+  res.render("turing-fluid", { loop: false, interval: 0,alias:'Turing Fluid' });
 };
 
 const touchy_physarum = (req, res) => {
-  res.render("./touchy-physarum-fluid-mix.ejs", { loop: false, interval: 0,alias:'Acid Night' });
+  res.render("touchy-physarum-fluid-mix", { loop: false, interval: 0,alias:'Acid Night' });
 };
 
 const inksplash = (req, res) => {
-  res.render("./inksplash.ejs", { loop: false, interval: 0,alias:'inksplash' });
+  res.render("inksplash", { loop: false, interval: 0,alias:'inksplash' });
 };
 // const inksplash = (req, res) => {
-//   res.sendFile(path.join(__dirname, "../simulations/inksplash.html"));
+//   res.sendFile(path.join(__dirname, ".simulations/inksplash.html"));
 // };
 const milkywayBivariate1 = (req, res) => {
-  res.render("./milkyway-bivariate1.ejs", { loop: false, interval: 0,alias:'Bivariate' });
+  res.render("milkyway-bivariate1", { loop: false, interval: 0,alias:'Bivariate' });
 };
 
 const edgebatch = (req, res) => {
-  res.render("./edgebatch.ejs", { loop: false, interval: 0,alias:'edgebatch' });
+  res.render("edgebatch", { loop: false, interval: 0,alias:'edgebatch' });
 };
 
 const jamfactory = (req, res) => {
-  res.render("./jamfactory.ejs", { loop: false, interval: 0,alias:'jamfactory' });
+  res.render("jamfactory", { loop: false, interval: 0,alias:'jamfactory' });
 };
 
 const powerhouse = (req, res) => {
-  res.render("./powerhouse.ejs", { loop: false, interval: 0,alias:'powerhouse' });
+  res.render("powerhouse", { loop: false, interval: 0,alias:'powerhouse' });
 };
 
 const bleedingedge = (req, res) => {
-  res.render("./bleedingedge.ejs", { loop: false, interval: 0,alias:'bleedingedge' });
+  res.render("bleedingedge", { loop: false, interval: 0,alias:'bleedingedge' });
 };
 const dragontrack = (req, res) => {
-  res.render("./DragonTrack2017.ejs", { loop: false, interval: 0,alias:'dragontrack' });
+  res.render("DragonTrack2017", { loop: false, interval: 0,alias:'dragontrack' });
 };
 const lightwheel = (req, res) => {
-  res.render("./ScrollSpiral/stone-flower.ejs", { loop: false, interval: 0,alias:'Stone Flower' });
+  res.render("stone-flower", { loop: false, interval: 0,alias:'Stone Flower' });
 };
 const suckerpunchDiode = (req, res) => {
-  res.render("./suckerpunch-diode.ejs", { loop: false, interval: 0,alias:'spdiode' });
+  res.render("suckerpunch-diode", { loop: false, interval: 0,alias:'spdiode' });
 };
 const egregore = (req, res) => {
-  res.render("./egregore.ejs", { loop: false, interval: 0,alias:'egregore' });
+  res.render("egregore", { loop: false, interval: 0,alias:'egregore' });
 };
 
 const suturefluid = (req, res) => {
-  res.render("./suturefluid-mk2-2M.ejs", { loop: false, interval: 0,alias:'suture' });
+  res.render("suturefluid-mk2-2M", { loop: false, interval: 0,alias:'suture' });
 };
 
 const fogzone = (req, res) => {
-  res.render("./suturefluid-fogzone-2M.ejs", { loop: false, interval: 0,alias:'fogzone' });
+  res.render("suturefluid-fogzone-2M", { loop: false, interval: 0,alias:'fogzone' });
 };
 const visciousfingering = (req, res) => {
-  res.render("./viscousfingering-2M.ejs", { loop: false, interval: 0,alias:'viscious fingering' });
+  res.render("viscousfingering-2M", { loop: false, interval: 0,alias:'viscious fingering' });
 };
 const fluidgiraffe = (req, res) => {
-  res.render("./fluid-giraffe.ejs", { loop: false, interval: 0,alias:'Kebis' });
+  res.render("fluid-giraffe", { loop: false, interval: 0,alias:'Kebis' });
 };
 const candlewickturing = (req, res) => {
-  res.render("./candlewickturing.ejs", { loop: false, interval: 0,alias:'candlewick' });
+  res.render("candlewickturing", { loop: false, interval: 0,alias:'candlewick' });
 };
 const networth = (req, res) => {
-  res.render("./networth.ejs", { loop: false, interval: 0,alias:'networth' });
+  res.render("networth", { loop: false, interval: 0,alias:'networth' });
 };
 const warpbuffer = (req, res) => {
-  res.render("./warpbuffer.ejs", { loop: false, interval: 0,alias:'warpbuffer' });
+  res.render("warpbuffer", { loop: false, interval: 0,alias:'warpbuffer' });
 };
 const layeredfractals = (req, res) => {
-  res.render("./layered-fractals-wip.ejs", { loop: false, interval: 0,alias:'layered fractals' });
+  res.render("layered-fractals-wip", { loop: false, interval: 0,alias:'layered fractals' });
 };
 const coupledturing = (req, res) => {
-  res.render("./coupled-Turing-pattern-fluid.ejs", {
+  res.render("coupled-Turing-pattern-fluid", {
     loop: false,
     interval: 0,
     alias:'Coupled Patterns'
   });
 };
 const celldivision = (req, res) => {
-  res.render("./cell-division", {
+  res.render("cell-division", {
     loop: false,
     interval: 0,
     alias:'cell division'
   });
 };
 const about = (req, res) => {
-  res.render("./Cocoon-template/about.ejs");
+  res.render("Cocoon-template/about");
 };
 const particles = (req, res) => {
-  res.render("./InfiniteTubes-master/particles.ejs", { loop: false, interval: 0,alias:'particles' });
+  res.render("particles", { loop: false, interval: 0,alias:'particles' });
 };
 const digicloud = (req, res) => {
-  res.render("./digicloud.ejs", { loop: false, interval: 0,alias:'cyber-cloud' });
+  res.render("digicloud", { loop: false, interval: 0,alias:'cyber-cloud' });
 };
 const locations = (req, res) => {
-  res.render("./locations.ejs", { loop: false, interval: 0,alias:'locations' });
+  res.render("locations", { loop: false, interval: 0,alias:'locations' });
 };
 const torusTunnel = (req, res) => {
-  res.render("./torus-tunnel.ejs", { loop: false, interval: 0,alias:'Torus' });
+  res.render("torus-tunnel", { loop: false, interval: 0,alias:'Torus' });
 };
 const triangles = (req, res) => {
-  res.render("./InfiniteTubes-master/triangles.ejs", { loop: false, interval: 0 ,alias:'Triangles'});
+  res.render("triangles", { loop: false, interval: 0 ,alias:'Triangles'});
 };
 const spiralforge = (req, res) => {
-  res.render("./ScrollSpiral/spiralforge.ejs", { loop: false, interval: 0,alias:'Forge' });
+  res.render("spiralforge", { loop: false, interval: 0,alias:'Forge' });
 };
 const spiralgate = (req, res) => {
-  res.render("./ScrollSpiral/spiralgate.ejs", { loop: false, interval: 0,alias:'Gate' });
+  res.render("spiralgate", { loop: false, interval: 0,alias:'Gate' });
 };
 const bloodcells = (req, res) => {
-  res.render("./InfiniteTubes-master/blood-cells.ejs", { loop: false, interval: 0,alias:'O+' });
+  res.render("blood-cells", { loop: false, interval: 0,alias:'O+' });
 };
 const bricktunnel = (req, res) => {
-  res.render("./InfiniteTubes-master/brick-tunnel.ejs", { loop: false, interval: 0,alias:'Violenza' });
+  res.render("brick-tunnel", { loop: false, interval: 0,alias:'Violenza' });
 };
 const swimtube = (req, res) => {
-  res.render("./InfiniteTubes-master/swim-tube.ejs", { loop: false, interval: 0,alias:'Swim' });
+  res.render("swim-tube", { loop: false, interval: 0,alias:'Swim' });
 };
 const blacknebula = (req, res) => {
-  res.render("./ScrollSpiral/black-nebula.ejs", { loop: false, interval: 0 ,alias:'Nebula'});
+  res.render("black-nebula", { loop: false, interval: 0 ,alias:'Nebula'});
 };
 const blacknwhite = (req, res) => {
-  res.render("./ScrollSpiral/black&white.ejs", { loop: false, interval: 0,alias:'B & W' });
+  res.render("black&white", { loop: false, interval: 0,alias:'B & W' });
 };
 const growscales = (req, res) => {
-  res.render("./ScrollSpiral/grow-scales.ejs", { loop: false, interval: 0,alias:'scales' });
+  res.render("grow-scales", { loop: false, interval: 0,alias:'scales' });
 };
 const hxdj = (req, res) => {
-  res.render("./hxdj.ejs", { loop: false, interval: 0 });
+  res.render("hxdj", { loop: false, interval: 0 });
 };
 const blurry = (req, res) => {
-  res.render("./blurry.ejs", { loop: false, interval: 0 });
+  res.render("blurry", { loop: false, interval: 0 });
 };
 const trafficohio = (req, res) => {
   let arr = ['Headlights','Traffic Ohio', 'Infinite Lights','Aerobase','Cyber Mountain','Ascendency','Vertigo']
   let shufflevar = arr[Math.floor(Math.random() * arr.length)];
-  res.render("./traffic-ohio.ejs", { loop: false, interval: 0, alias: shufflevar });
+  res.render("traffic-ohio", { loop: false, interval: 0, alias: shufflevar });
 };
 const slices = (req, res) => {
-  res.render("./slices.ejs", { loop: false, interval: 0,alias:'slices' });
+  res.render("slices", { loop: false, interval: 0,alias:'slices' });
 };
 const littletriangles = (req, res) => {
-  res.render("./ScrollSpiral/little-triangles.ejs", { loop: false, interval: 0,alias:'tri-fractals' });
+  res.render("little-triangles", { loop: false, interval: 0,alias:'tri-fractals' });
 };
 const jellyfish = (req, res) => {
-  res.render("./jellyfish.ejs", { loop: false, interval: 0,alias:'Jelly' });
+  res.render("jellyfish", { loop: false, interval: 0,alias:'Jelly' });
 };
 
 
