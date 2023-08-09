@@ -8,11 +8,8 @@ var path = require('path');
 
 const shouldCompress = (req, res) => {
   if (req.headers['x-no-compression']) {
-    // don't compress responses if this request header is present
     return false;
   }
-
-  // fallback to standard compression
   return compression.filter(req, res);
 };
 
@@ -36,7 +33,6 @@ app.set("view engine", "ejs");
 
 
 app.use(express.urlencoded({ extended: true })); //middleware packed up with EXPRESS framework to handle URL data
-//app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.use(express.json());
@@ -51,5 +47,3 @@ app.listen(port, host, function() {
 });
 
 module.exports = app;
-
-//middleware && static files, remember: middleware is any software that deals with the request before it becomes a reponse
