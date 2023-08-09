@@ -43,6 +43,8 @@ const host = '0.0.0.0';
 const port = process.env.PORT || 3000;
 //app.listen(process.env.PORT || 5000)
 app.listen(port, host, function() {
+
+  console.log("messing with vercel");
   console.log("Server started at port: ", port);
 });
 
